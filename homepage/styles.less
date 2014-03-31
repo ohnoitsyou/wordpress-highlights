@@ -1,0 +1,91 @@
+.rounded-corners(@radius: 5px;) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius; 
+}
+
+.gradient(@from, @to) { 
+ background: -moz-linear-gradient(top, @from, @to);
+ background: -webkit-gradient(linear,left top, left bottom, from(@from), to(@to));
+ filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=@from,endColorstr=@to);
+}
+
+.center(@width) {
+  width: @width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.12Column {
+  width: 940px;
+}
+
+body {
+  background: #303538;
+}
+::selection {
+  //background: rgb(255,70,68); 
+  background: #ffb7b7;
+}
+a {
+ text-decoration: none;
+ color: black;
+}
+
+.content, .footer {
+  background: rgb(38*3,38*3,38*3);
+}
+
+.navigation {
+  .center(240px);
+
+  text-align: center;
+  ul {
+    list-style:none;
+    padding: 0px;
+    .navButton { 
+      .gradient(rgb(38*3,38*3,38*3), rgb(38*3.5,38*3.5,38*3.5));
+
+      display: inline-block;
+      border: 2px solid black;
+      padding: 5px;
+      margin: -3px;
+
+      &:hover {
+        .gradient(rgb(38*3.5,38*3.5,38*3.5), rgb(38*3,38*3,38*3));
+      }
+      &:first-child {
+        .rounded-corners(5px 0px 0px 5px);
+      }
+      &:last-child { 
+        .rounded-corners(0px 5px 5px 0px);
+      }  
+      a {
+        margin: -5px;
+        padding: 5px;
+      }
+    }
+  }
+}
+.content {
+  border: 2px solid black;
+  .center(960px);
+}
+.footer {
+  .center(960px); 
+  
+  margin-top: 10px;
+  border: 1px solid black;
+
+  .social {
+    .center(240px);
+
+
+    text-align: center;
+    div {
+      display: inline-block;
+    }
+  }
+}

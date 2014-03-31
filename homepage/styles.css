@@ -1,0 +1,81 @@
+.12Column {
+  width: 940px;
+}
+body {
+  background: #303538;
+}
+::selection {
+  background: #ffb7b7;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.content,
+.footer {
+  background: #727272;
+}
+.navigation {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0px;
+}
+.navigation ul .navButton {
+  background: -moz-linear-gradient(top, #727272, #858585);
+  background: -webkit-gradient(linear, left top, left bottom, from(#727272), to(#858585));
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#727272, endColorstr=#858585);
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px;
+  margin: -3px;
+}
+.navigation ul .navButton:hover {
+  background: -moz-linear-gradient(top, #858585, #727272);
+  background: -webkit-gradient(linear, left top, left bottom, from(#858585), to(#727272));
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#858585, endColorstr=#727272);
+}
+.navigation ul .navButton:first-child {
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -ms-border-radius: 5px 0px 0px 5px;
+  -o-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+.navigation ul .navButton:last-child {
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+.navigation ul .navButton a {
+  margin: -5px;
+  padding: 5px;
+}
+.content {
+  border: 2px solid black;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.footer .social {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.footer .social div {
+  display: inline-block;
+}
