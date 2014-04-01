@@ -6,6 +6,7 @@ Customizable:
 * title
 * link
 * background color (limited selection right now)
+* text color (limited selection right now)
 * drop shadow color (limited selection right now)
 * margin
 * padding
