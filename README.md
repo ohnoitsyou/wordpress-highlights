@@ -1,5 +1,3 @@
+Highlights widget	
 ==
-Snippets
-==
-
-Bits of code I have written that I want to keep around
+A widget used to feature a bit of text in a sidebar on a wordpress blog
