@@ -1,15 +1,15 @@
 <?php
 /*
- * Plugin Name: CSEE Highlight
+ * Plugin Name: Sidebar Highlight
  * Description: A front page highlight
  * Author: David Young
  * Version: 1.0
  */
 
 
-class cseehighlight_widget extends WP_Widget {
+class highlight_widget extends WP_Widget {
 
-  function cseehighlight_widget() {
+  function highlight_widget() {
     parent::WP_Widget(false, $name = 'Highlight widget');
   }
 
@@ -172,11 +172,11 @@ class cseehighlight_widget extends WP_Widget {
   }
 }
 
-function cseehighlight_styles() {
-  wp_register_style('csee-highlights-style',plugins_url('csee-highlights-style.css',__FILE__));
-  wp_enqueue_style('csee-highlights-style');
+function highlight_styles() {
+  wp_register_style('highlights-style',plugins_url('highlights-style.css',__FILE__));
+  wp_enqueue_style('highlights-style');
 }
 
 
-add_action('widgets_init', create_function('', 'return register_widget("cseehighlight_widget");'));
-add_action('wp_enqueue_scripts','cseehighlight_styles');
+add_action('widgets_init', create_function('', 'return register_widget("highlight_widget");'));
+add_action('wp_enqueue_scripts','highlight_styles');
